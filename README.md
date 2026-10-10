@@ -2,21 +2,18 @@
 
 KICE Arena's rank SVGs, page illustrations and topic icons in one versioned catalog.
 
-[MIT](LICENSE) · ESM + TypeScript · Browser / Node / Vite
+[MIT](LICENSE) · ESM + TypeScript · Browser / Node / Vite · [![npm version](https://img.shields.io/npm/v/%40kicearena%2Fassets)](https://www.npmjs.com/package/@kicearena/assets)
 
 ![Asset gallery](docs/images/preview.png)
 
 ## Use
 
-GitHub Packages requires a read:packages credential even for public npm packages. Set `NODE_AUTH_TOKEN` and this project `.npmrc`:
-
-```ini
-@kicearena:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
-```
+Install directly from the public npm registry:
 
 ```sh
-bun add --exact @kicearena/assets@0.1.0
+npm install --save-exact @kicearena/assets@0.1.1
+# or
+bun add --exact @kicearena/assets@0.1.1
 ```
 
 ```ts
