@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320" role="img" aria-labelledby="titleX">
+  <title id="titleX">X rank emblem</title>
+  <defs>
+    <linearGradient id="xPurple" gradientUnits="userSpaceOnUse" x1="74" y1="24" x2="376" y2="42">
+      <stop offset="0" stop-color="#743cd0"/>
+      <stop offset="1" stop-color="#753ed2"/>
+    </linearGradient>
+    <linearGradient id="xBlack" gradientUnits="userSpaceOnUse" x1="436" y1="71" x2="159" y2="294">
+      <stop offset="0" stop-color="#282828"/>
+      <stop offset="1" stop-color="#292929"/>
+    </linearGradient>
+    <linearGradient id="xGold" gradientUnits="userSpaceOnUse" x1="409" y1="126" x2="438" y2="260">
+      <stop offset="0" stop-color="#eaa50b"/>
+      <stop offset="1" stop-color="#f1ab09"/>
+    </linearGradient>
+  </defs>
+  <g shape-rendering="geometricPrecision">
+    <path d="M58 305 L109 297 L256 184 L190 91 L271 173 L306 147 L296 135 L397 23 L278 112 L192 22 L68 22 L220 163 Z" fill="url(#xPurple)"/>
+    <path d="M462 49 L282 184 L339 259 L268 196 L129 317 L267 223 L334 292 L454 305 L333 178 Z" fill="url(#xBlack)"/>
+    <path d="M433 100 L352 179 L466 289 L373 178 Z" fill="url(#xGold)" fill-rule="evenodd"/>
+  </g>
+</svg>

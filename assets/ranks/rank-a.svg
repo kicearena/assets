@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320" role="img" aria-labelledby="titleA">
+  <title id="titleA">A rank emblem</title>
+  <defs>
+    <linearGradient id="aMain" gradientUnits="userSpaceOnUse" x1="22" y1="278" x2="347" y2="41">
+      <stop offset="0" stop-color="#67bc37"/>
+      <stop offset="1" stop-color="#67bc36"/>
+    </linearGradient>
+    <linearGradient id="aSlash1" gradientUnits="userSpaceOnUse" x1="349" y1="166" x2="467" y2="135">
+      <stop offset="0" stop-color="#6bbe39"/>
+      <stop offset="1" stop-color="#65bc35"/>
+    </linearGradient>
+    <linearGradient id="aSlash2" gradientUnits="userSpaceOnUse" x1="347" y1="197" x2="341" y2="224">
+      <stop offset="0" stop-color="#69bd37"/>
+      <stop offset="1" stop-color="#6abd39"/>
+    </linearGradient>
+  </defs>
+  <g shape-rendering="geometricPrecision">
+    <path d="M349 39 L213 50 L18 280 L87 272 L247 95 L284 84 L262 155 L208 164 L164 212 L262 201 L237 273 L314 255 Z" fill="url(#aMain)"/>
+    <path d="M486 131 L351 143 L347 168 L486 133 Z" fill="url(#aSlash1)"/>
+    <path d="M501 174 L345 195 L338 227 Z" fill="url(#aSlash2)"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320" role="img" aria-labelledby="title">
+  <title id="title">C rank emblem</title>
+  <defs>
+    <linearGradient id="rankGradient" gradientUnits="userSpaceOnUse" x1="236.28" y1="19.46" x2="110.34" y2="278.92">
+      <stop offset="0" stop-color="#3678b1"/>
+      <stop offset="1" stop-color="#3777b0"/>
+    </linearGradient>
+  </defs>
+  <path d="M 363.00 35.00 L 131.00 51.00 L 62.00 118.00 L 25.00 225.00 L 25.00 230.00 L 74.00 289.00 L 267.00 273.00 L 318.00 211.00 L 319.00 207.00 L 267.00 211.00 L 258.00 213.00 L 227.00 215.00 L 136.00 225.00 L 123.00 225.00 L 110.00 213.00 L 109.00 207.00 L 130.00 147.00 L 139.00 136.00 L 162.00 113.00 L 167.00 110.00 L 298.00 100.00 L 363.00 37.00 Z" fill="url(#rankGradient)" fill-rule="evenodd" clip-rule="evenodd"/>
+</svg>

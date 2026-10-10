@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320" role="img" aria-labelledby="title">
+  <title id="title">B rank emblem</title>
+  <defs>
+    <linearGradient id="rankGradient" gradientUnits="userSpaceOnUse" x1="180.90" y1="47.12" x2="214.06" y2="266.24">
+      <stop offset="0" stop-color="#0cadcc"/>
+      <stop offset="1" stop-color="#0dadcc"/>
+    </linearGradient>
+  </defs>
+  <path d="M 314.00 29.00 L 96.00 44.00 L 74.00 120.00 L 29.00 295.00 L 37.00 290.00 L 116.00 212.00 L 152.00 94.00 L 273.00 86.00 L 274.00 89.00 L 237.00 129.00 L 170.00 136.00 L 145.00 182.00 L 241.00 173.00 L 252.00 186.00 L 254.00 192.00 L 223.00 224.00 L 134.00 233.00 L 70.00 288.00 L 68.00 292.00 L 253.00 273.00 L 308.00 226.00 L 330.00 176.00 L 329.00 171.00 L 302.00 140.00 L 334.00 115.00 L 351.00 81.00 L 350.00 77.00 Z" fill="url(#rankGradient)" fill-rule="evenodd" clip-rule="evenodd"/>
+</svg>
