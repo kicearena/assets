@@ -1,0 +1,3849 @@
+{
+  "format": "kice-cutout-kit",
+  "version": 1,
+  "units": "logical pixels",
+  "angleUnit": "radians",
+  "assets": {
+    "polynomial-press": {
+      "kind": "device",
+      "label": "다항식 · 항 조립 프레스",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "input": {
+          "position": [75, 171]
+        },
+        "output": {
+          "position": [178, 171]
+        },
+        "handle": {
+          "position": [128, 40]
+        }
+      },
+      "files": {
+        "svg": "assets/polynomial-press.svg",
+        "png": "assets/polynomial-press.png"
+      },
+      "parts": [
+        {
+          "id": "frame",
+          "files": {
+            "svg": "assets/polynomial-press--frame.svg",
+            "png": "assets/polynomial-press--frame.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "tile-x",
+          "files": {
+            "svg": "assets/polynomial-press--tile-x.svg",
+            "png": "assets/polynomial-press--tile-x.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, -8],
+              [0.3333333333333333, 0],
+              [0.6666666666666666, 0],
+              [1.0, -8]
+            ]
+          }
+        },
+        {
+          "id": "tile-c",
+          "files": {
+            "svg": "assets/polynomial-press--tile-c.svg",
+            "png": "assets/polynomial-press--tile-c.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 8],
+              [0.3333333333333333, 0],
+              [0.6666666666666666, 0],
+              [1.0, 8]
+            ]
+          }
+        },
+        {
+          "id": "stamp",
+          "files": {
+            "svg": "assets/polynomial-press--stamp.svg",
+            "png": "assets/polynomial-press--stamp.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "y": [
+              [0.0, 0],
+              [0.3333333333333333, 0],
+              [0.6666666666666666, 34],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "badge",
+          "files": {
+            "svg": "assets/polynomial-press--badge.svg",
+            "png": "assets/polynomial-press--badge.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "equation-balance": {
+      "kind": "device",
+      "label": "방정식 · 균형 저울",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "leftPan": {
+          "position": [63, 155],
+          "part": "left-pan"
+        },
+        "rightPan": {
+          "position": [193, 155],
+          "part": "right-pan"
+        },
+        "fulcrum": {
+          "position": [128, 91]
+        }
+      },
+      "files": {
+        "svg": "assets/equation-balance.svg",
+        "png": "assets/equation-balance.png"
+      },
+      "parts": [
+        {
+          "id": "stand",
+          "files": {
+            "svg": "assets/equation-balance--stand.svg",
+            "png": "assets/equation-balance--stand.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "beam",
+          "files": {
+            "svg": "assets/equation-balance--beam.svg",
+            "png": "assets/equation-balance--beam.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 91],
+          "tracks": {
+            "rotation": [
+              [0.0, -0.12],
+              [0.5, 0.12],
+              [1.0, -0.12]
+            ]
+          }
+        },
+        {
+          "id": "left-pan",
+          "files": {
+            "svg": "assets/equation-balance--left-pan.svg",
+            "png": "assets/equation-balance--left-pan.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "y": [
+              [0.0, -10],
+              [0.5, 10],
+              [1.0, -10]
+            ]
+          }
+        },
+        {
+          "id": "right-pan",
+          "files": {
+            "svg": "assets/equation-balance--right-pan.svg",
+            "png": "assets/equation-balance--right-pan.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "y": [
+              [0.0, 10],
+              [0.5, -10],
+              [1.0, 10]
+            ]
+          }
+        },
+        {
+          "id": "equal-token",
+          "files": {
+            "svg": "assets/equation-balance--equal-token.svg",
+            "png": "assets/equation-balance--equal-token.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "y": [
+              [0.0, -10],
+              [0.5, 10],
+              [1.0, -10]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "function-machine": {
+      "kind": "device",
+      "label": "함수 · 변환 기계",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "input": {
+          "position": [64, 143]
+        },
+        "output": {
+          "position": [192, 143]
+        },
+        "button": {
+          "position": [128, 181]
+        }
+      },
+      "files": {
+        "svg": "assets/function-machine.svg",
+        "png": "assets/function-machine.png"
+      },
+      "parts": [
+        {
+          "id": "housing",
+          "files": {
+            "svg": "assets/function-machine--housing.svg",
+            "png": "assets/function-machine--housing.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "input",
+          "files": {
+            "svg": "assets/function-machine--input.svg",
+            "png": "assets/function-machine--input.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, 38],
+              [1.0, 0]
+            ],
+            "opacity": [
+              [0.0, 1],
+              [0.5, 0.15],
+              [1.0, 1]
+            ]
+          }
+        },
+        {
+          "id": "output",
+          "files": {
+            "svg": "assets/function-machine--output.svg",
+            "png": "assets/function-machine--output.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, -28],
+              [0.5, 0],
+              [1.0, -28]
+            ],
+            "opacity": [
+              [0.0, 0.2],
+              [0.5, 1],
+              [1.0, 0.2]
+            ]
+          }
+        },
+        {
+          "id": "roller",
+          "files": {
+            "svg": "assets/function-machine--roller.svg",
+            "png": "assets/function-machine--roller.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 181],
+          "tracks": {
+            "rotation": [
+              [0.0, 0],
+              [1.0, 6.283185]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "growth-dial": {
+      "kind": "device",
+      "label": "지수·로그 · 성장 다이얼",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "dial": {
+          "position": [128, 229]
+        },
+        "output": {
+          "position": [198, 61]
+        }
+      },
+      "files": {
+        "svg": "assets/growth-dial.svg",
+        "png": "assets/growth-dial.png"
+      },
+      "parts": [
+        {
+          "id": "case",
+          "files": {
+            "svg": "assets/growth-dial--case.svg",
+            "png": "assets/growth-dial--case.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "marker",
+          "files": {
+            "svg": "assets/growth-dial--marker.svg",
+            "png": "assets/growth-dial--marker.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.3333333333333333, 53],
+              [0.6666666666666666, 107],
+              [1.0, 0]
+            ],
+            "y": [
+              [0.0, 0],
+              [0.3333333333333333, -38],
+              [0.6666666666666666, -127],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "dial",
+          "files": {
+            "svg": "assets/growth-dial--dial.svg",
+            "png": "assets/growth-dial--dial.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 229],
+          "tracks": {
+            "rotation": [
+              [0.0, -0.7],
+              [0.5, 0.7],
+              [1.0, -0.7]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "unit-circle": {
+      "kind": "device",
+      "label": "삼각함수 · 회전 단위원",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "center": {
+          "position": [128, 116]
+        },
+        "handle": {
+          "position": [209, 116],
+          "part": "radius"
+        }
+      },
+      "files": {
+        "svg": "assets/unit-circle.svg",
+        "png": "assets/unit-circle.png"
+      },
+      "parts": [
+        {
+          "id": "base",
+          "files": {
+            "svg": "assets/unit-circle--base.svg",
+            "png": "assets/unit-circle--base.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "radius",
+          "files": {
+            "svg": "assets/unit-circle--radius.svg",
+            "png": "assets/unit-circle--radius.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 116],
+          "tracks": {
+            "rotation": [
+              [0.0, 0],
+              [1.0, 6.283185]
+            ]
+          }
+        },
+        {
+          "id": "angle",
+          "files": {
+            "svg": "assets/unit-circle--angle.svg",
+            "png": "assets/unit-circle--angle.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "sequence-steps": {
+      "kind": "device",
+      "label": "수열 · 숫자 계단",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "start": {
+          "position": [52, 177]
+        },
+        "finish": {
+          "position": [191, 72]
+        }
+      },
+      "files": {
+        "svg": "assets/sequence-steps.svg",
+        "png": "assets/sequence-steps.png"
+      },
+      "parts": [
+        {
+          "id": "stairs",
+          "files": {
+            "svg": "assets/sequence-steps--stairs.svg",
+            "png": "assets/sequence-steps--stairs.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "token",
+          "files": {
+            "svg": "assets/sequence-steps--token.svg",
+            "png": "assets/sequence-steps--token.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.25, 45],
+              [0.5, 93],
+              [0.75, 139],
+              [1.0, 0]
+            ],
+            "y": [
+              [0.0, 0],
+              [0.25, -35],
+              [0.5, -70],
+              [0.75, -105],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "flag",
+          "files": {
+            "svg": "assets/sequence-steps--flag.svg",
+            "png": "assets/sequence-steps--flag.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "limit-gate": {
+      "kind": "device",
+      "label": "극한 · 가까워지는 관문",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "target": {
+          "position": [201, 112]
+        },
+        "start": {
+          "position": [49, 112]
+        }
+      },
+      "files": {
+        "svg": "assets/limit-gate.svg",
+        "png": "assets/limit-gate.png"
+      },
+      "parts": [
+        {
+          "id": "rail",
+          "files": {
+            "svg": "assets/limit-gate--rail.svg",
+            "png": "assets/limit-gate--rail.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "target",
+          "files": {
+            "svg": "assets/limit-gate--target.svg",
+            "png": "assets/limit-gate--target.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "approach",
+          "files": {
+            "svg": "assets/limit-gate--approach.svg",
+            "png": "assets/limit-gate--approach.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.25, 74],
+              [0.5, 120],
+              [0.75, 132],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "guides",
+          "files": {
+            "svg": "assets/limit-gate--guides.svg",
+            "png": "assets/limit-gate--guides.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "tangent-probe": {
+      "kind": "device",
+      "label": "미분 · 접선 탐침",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "contact": {
+          "position": [129, 113]
+        },
+        "handle": {
+          "position": [191, 47],
+          "part": "probe"
+        }
+      },
+      "files": {
+        "svg": "assets/tangent-probe.svg",
+        "png": "assets/tangent-probe.png"
+      },
+      "parts": [
+        {
+          "id": "graph",
+          "files": {
+            "svg": "assets/tangent-probe--graph.svg",
+            "png": "assets/tangent-probe--graph.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "probe",
+          "files": {
+            "svg": "assets/tangent-probe--probe.svg",
+            "png": "assets/tangent-probe--probe.png"
+          },
+          "size": [256, 256],
+          "pivot": [129, 113],
+          "tracks": {
+            "rotation": [
+              [0.0, -0.12],
+              [0.5, 0.15],
+              [1.0, -0.12]
+            ]
+          }
+        },
+        {
+          "id": "guide",
+          "files": {
+            "svg": "assets/tangent-probe--guide.svg",
+            "png": "assets/tangent-probe--guide.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "area-collector": {
+      "kind": "device",
+      "label": "적분 · 넓이 수집기",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "start": {
+          "position": [60, 206]
+        },
+        "output": {
+          "position": [205, 229]
+        }
+      },
+      "files": {
+        "svg": "assets/area-collector.svg",
+        "png": "assets/area-collector.png"
+      },
+      "parts": [
+        {
+          "id": "frame",
+          "files": {
+            "svg": "assets/area-collector--frame.svg",
+            "png": "assets/area-collector--frame.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "strip-0",
+          "files": {
+            "svg": "assets/area-collector--strip-0.svg",
+            "png": "assets/area-collector--strip-0.png"
+          },
+          "size": [256, 256],
+          "pivot": [70, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "strip-1",
+          "files": {
+            "svg": "assets/area-collector--strip-1.svg",
+            "png": "assets/area-collector--strip-1.png"
+          },
+          "size": [256, 256],
+          "pivot": [96, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "strip-2",
+          "files": {
+            "svg": "assets/area-collector--strip-2.svg",
+            "png": "assets/area-collector--strip-2.png"
+          },
+          "size": [256, 256],
+          "pivot": [122, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "strip-3",
+          "files": {
+            "svg": "assets/area-collector--strip-3.svg",
+            "png": "assets/area-collector--strip-3.png"
+          },
+          "size": [256, 256],
+          "pivot": [148, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "strip-4",
+          "files": {
+            "svg": "assets/area-collector--strip-4.svg",
+            "png": "assets/area-collector--strip-4.png"
+          },
+          "size": [256, 256],
+          "pivot": [174, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "strip-5",
+          "files": {
+            "svg": "assets/area-collector--strip-5.svg",
+            "png": "assets/area-collector--strip-5.png"
+          },
+          "size": [256, 256],
+          "pivot": [200, 206],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.15],
+              [0.5, 1],
+              [1.0, 0.15]
+            ]
+          }
+        },
+        {
+          "id": "bin",
+          "files": {
+            "svg": "assets/area-collector--bin.svg",
+            "png": "assets/area-collector--bin.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "branch-router": {
+      "kind": "device",
+      "label": "경우의 수 · 분기 장치",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "input": {
+          "position": [128, 55]
+        },
+        "leaf": {
+          "position": [33, 190]
+        }
+      },
+      "files": {
+        "svg": "assets/branch-router.svg",
+        "png": "assets/branch-router.png"
+      },
+      "parts": [
+        {
+          "id": "paths",
+          "files": {
+            "svg": "assets/branch-router--paths.svg",
+            "png": "assets/branch-router--paths.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "nodes",
+          "files": {
+            "svg": "assets/branch-router--nodes.svg",
+            "png": "assets/branch-router--nodes.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "token",
+          "files": {
+            "svg": "assets/branch-router--token.svg",
+            "png": "assets/branch-router--token.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.3333333333333333, -62],
+              [0.6666666666666666, -95],
+              [1.0, 0]
+            ],
+            "y": [
+              [0.0, 0],
+              [0.3333333333333333, 71],
+              [0.6666666666666666, 135],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "base",
+          "files": {
+            "svg": "assets/branch-router--base.svg",
+            "png": "assets/branch-router--base.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "chance-drum": {
+      "kind": "device",
+      "label": "확률 · 주사위 추첨기",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "release": {
+          "position": [128, 102],
+          "part": "dice"
+        },
+        "tray": {
+          "position": [128, 195]
+        }
+      },
+      "files": {
+        "svg": "assets/chance-drum.svg",
+        "png": "assets/chance-drum.png"
+      },
+      "parts": [
+        {
+          "id": "tray",
+          "files": {
+            "svg": "assets/chance-drum--tray.svg",
+            "png": "assets/chance-drum--tray.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "dice",
+          "files": {
+            "svg": "assets/chance-drum--dice.svg",
+            "png": "assets/chance-drum--dice.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 102],
+          "tracks": {
+            "rotation": [
+              [0.0, -0.15],
+              [0.5, 0.2],
+              [1.0, -0.15]
+            ],
+            "y": [
+              [0.0, 0],
+              [0.3333333333333333, -15],
+              [0.6666666666666666, 10],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "ticket",
+          "files": {
+            "svg": "assets/chance-drum--ticket.svg",
+            "png": "assets/chance-drum--ticket.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "rotation": [
+              [0.0, 0.1],
+              [0.5, -0.1],
+              [1.0, 0.1]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "data-counter": {
+      "kind": "device",
+      "label": "통계 · 데이터 카운터",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "readout": {
+          "position": [177, 74]
+        },
+        "base": {
+          "position": [128, 230]
+        }
+      },
+      "files": {
+        "svg": "assets/data-counter.svg",
+        "png": "assets/data-counter.png"
+      },
+      "parts": [
+        {
+          "id": "screen",
+          "files": {
+            "svg": "assets/data-counter--screen.svg",
+            "png": "assets/data-counter--screen.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "bar-0",
+          "files": {
+            "svg": "assets/data-counter--bar-0.svg",
+            "png": "assets/data-counter--bar-0.png"
+          },
+          "size": [256, 256],
+          "pivot": [70, 197],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.65],
+              [0.5, 1],
+              [1.0, 0.65]
+            ]
+          }
+        },
+        {
+          "id": "bar-1",
+          "files": {
+            "svg": "assets/data-counter--bar-1.svg",
+            "png": "assets/data-counter--bar-1.png"
+          },
+          "size": [256, 256],
+          "pivot": [119, 197],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.65],
+              [0.5, 1],
+              [1.0, 0.65]
+            ]
+          }
+        },
+        {
+          "id": "bar-2",
+          "files": {
+            "svg": "assets/data-counter--bar-2.svg",
+            "png": "assets/data-counter--bar-2.png"
+          },
+          "size": [256, 256],
+          "pivot": [168, 197],
+          "tracks": {
+            "scaleY": [
+              [0.0, 0.65],
+              [0.5, 1],
+              [1.0, 0.65]
+            ]
+          }
+        },
+        {
+          "id": "spark",
+          "files": {
+            "svg": "assets/data-counter--spark.svg",
+            "png": "assets/data-counter--spark.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "scaleX": [
+              [0.0, 0.8],
+              [0.5, 1.1],
+              [1.0, 0.8]
+            ],
+            "scaleY": [
+              [0.0, 0.8],
+              [0.5, 1.1],
+              [1.0, 0.8]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "set-lenses": {
+      "kind": "device",
+      "label": "집합 · 겹침 렌즈",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "intersection": {
+          "position": [128, 115]
+        },
+        "left": {
+          "position": [96, 115],
+          "part": "lens-a"
+        },
+        "right": {
+          "position": [160, 115],
+          "part": "lens-b"
+        }
+      },
+      "files": {
+        "svg": "assets/set-lenses.svg",
+        "png": "assets/set-lenses.png"
+      },
+      "parts": [
+        {
+          "id": "stand",
+          "files": {
+            "svg": "assets/set-lenses--stand.svg",
+            "png": "assets/set-lenses--stand.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "lens-a",
+          "files": {
+            "svg": "assets/set-lenses--lens-a.svg",
+            "png": "assets/set-lenses--lens-a.png"
+          },
+          "size": [256, 256],
+          "pivot": [96, 115],
+          "tracks": {
+            "x": [
+              [0.0, -10],
+              [0.5, 7],
+              [1.0, -10]
+            ]
+          }
+        },
+        {
+          "id": "lens-b",
+          "files": {
+            "svg": "assets/set-lenses--lens-b.svg",
+            "png": "assets/set-lenses--lens-b.png"
+          },
+          "size": [256, 256],
+          "pivot": [160, 115],
+          "tracks": {
+            "x": [
+              [0.0, 10],
+              [0.5, -7],
+              [1.0, 10]
+            ]
+          }
+        },
+        {
+          "id": "intersection",
+          "files": {
+            "svg": "assets/set-lenses--intersection.svg",
+            "png": "assets/set-lenses--intersection.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "opacity": [
+              [0.0, 0.15],
+              [0.5, 0.85],
+              [1.0, 0.15]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "coordinate-locator": {
+      "kind": "device",
+      "label": "좌표 · 위치 탐색기",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "target": {
+          "position": [169, 91],
+          "part": "crosshair"
+        },
+        "origin": {
+          "position": [65, 189]
+        }
+      },
+      "files": {
+        "svg": "assets/coordinate-locator.svg",
+        "png": "assets/coordinate-locator.png"
+      },
+      "parts": [
+        {
+          "id": "grid",
+          "files": {
+            "svg": "assets/coordinate-locator--grid.svg",
+            "png": "assets/coordinate-locator--grid.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "crosshair",
+          "files": {
+            "svg": "assets/coordinate-locator--crosshair.svg",
+            "png": "assets/coordinate-locator--crosshair.png"
+          },
+          "size": [256, 256],
+          "pivot": [169, 91],
+          "tracks": {
+            "x": [
+              [0.0, -40],
+              [0.5, 0],
+              [1.0, -40]
+            ],
+            "y": [
+              [0.0, 50],
+              [0.5, 0],
+              [1.0, 50]
+            ]
+          }
+        },
+        {
+          "id": "pin",
+          "files": {
+            "svg": "assets/coordinate-locator--pin.svg",
+            "png": "assets/coordinate-locator--pin.png"
+          },
+          "size": [256, 256],
+          "pivot": [169, 91],
+          "tracks": {
+            "x": [
+              [0.0, -40],
+              [0.5, 0],
+              [1.0, -40]
+            ],
+            "y": [
+              [0.0, 50],
+              [0.5, 0],
+              [1.0, 50]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "circle-compass": {
+      "kind": "device",
+      "label": "원 · 회전 컴퍼스",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "center": {
+          "position": [128, 124]
+        },
+        "tip": {
+          "position": [200, 124],
+          "part": "arm"
+        }
+      },
+      "files": {
+        "svg": "assets/circle-compass.svg",
+        "png": "assets/circle-compass.png"
+      },
+      "parts": [
+        {
+          "id": "paper",
+          "files": {
+            "svg": "assets/circle-compass--paper.svg",
+            "png": "assets/circle-compass--paper.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "arm",
+          "files": {
+            "svg": "assets/circle-compass--arm.svg",
+            "png": "assets/circle-compass--arm.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 124],
+          "tracks": {
+            "rotation": [
+              [0.0, 0],
+              [1.0, 6.283185]
+            ]
+          }
+        },
+        {
+          "id": "base",
+          "files": {
+            "svg": "assets/circle-compass--base.svg",
+            "png": "assets/circle-compass--base.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "conic-orbit": {
+      "kind": "device",
+      "label": "이차곡선 · 타원 궤도",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "focus": {
+          "position": [185, 120]
+        },
+        "center": {
+          "position": [128, 120]
+        }
+      },
+      "files": {
+        "svg": "assets/conic-orbit.svg",
+        "png": "assets/conic-orbit.png"
+      },
+      "parts": [
+        {
+          "id": "frame",
+          "files": {
+            "svg": "assets/conic-orbit--frame.svg",
+            "png": "assets/conic-orbit--frame.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "orbiter",
+          "files": {
+            "svg": "assets/conic-orbit--orbiter.svg",
+            "png": "assets/conic-orbit--orbiter.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "x": [
+              [0, 0],
+              [0.25, -101],
+              [0.5, -202],
+              [0.75, -101],
+              [1, 0]
+            ],
+            "y": [
+              [0.0, 0],
+              [0.25, -63],
+              [0.5, 0],
+              [0.75, 63],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "focus",
+          "files": {
+            "svg": "assets/conic-orbit--focus.svg",
+            "png": "assets/conic-orbit--focus.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "opacity": [
+              [0.0, 0.4],
+              [0.5, 1],
+              [1.0, 0.4]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "vector-arrow": {
+      "kind": "device",
+      "label": "벡터 · 방향 조종간",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "grip": {
+          "position": [66, 186]
+        },
+        "tip": {
+          "position": [176, 76],
+          "part": "arrow"
+        }
+      },
+      "files": {
+        "svg": "assets/vector-arrow.svg",
+        "png": "assets/vector-arrow.png"
+      },
+      "parts": [
+        {
+          "id": "board",
+          "files": {
+            "svg": "assets/vector-arrow--board.svg",
+            "png": "assets/vector-arrow--board.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "arrow",
+          "files": {
+            "svg": "assets/vector-arrow--arrow.svg",
+            "png": "assets/vector-arrow--arrow.png"
+          },
+          "size": [256, 256],
+          "pivot": [66, 186],
+          "tracks": {
+            "rotation": [
+              [0.0, -0.15],
+              [0.5, 0.15],
+              [1.0, -0.15]
+            ]
+          }
+        },
+        {
+          "id": "handle",
+          "files": {
+            "svg": "assets/vector-arrow--handle.svg",
+            "png": "assets/vector-arrow--handle.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "solid-projector": {
+      "kind": "device",
+      "label": "공간도형 · 입체 투영기",
+      "size": [256, 256],
+      "pivot": [128, 128],
+      "sockets": {
+        "vertex": {
+          "position": [128, 115],
+          "part": "cube"
+        },
+        "base": {
+          "position": [128, 218]
+        }
+      },
+      "files": {
+        "svg": "assets/solid-projector.svg",
+        "png": "assets/solid-projector.png"
+      },
+      "parts": [
+        {
+          "id": "base",
+          "files": {
+            "svg": "assets/solid-projector--base.svg",
+            "png": "assets/solid-projector--base.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {}
+        },
+        {
+          "id": "cube",
+          "files": {
+            "svg": "assets/solid-projector--cube.svg",
+            "png": "assets/solid-projector--cube.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 119],
+          "tracks": {
+            "y": [
+              [0.0, 0],
+              [0.5, -8],
+              [1.0, 0]
+            ],
+            "rotation": [
+              [0.0, -0.035],
+              [0.5, 0.035],
+              [1.0, -0.035]
+            ]
+          }
+        },
+        {
+          "id": "vertex",
+          "files": {
+            "svg": "assets/solid-projector--vertex.svg",
+            "png": "assets/solid-projector--vertex.png"
+          },
+          "size": [256, 256],
+          "pivot": [128, 128],
+          "tracks": {
+            "y": [
+              [0.0, 0],
+              [0.5, -8],
+              [1.0, 0]
+            ]
+          }
+        }
+      ],
+      "duration": 2,
+      "loop": true
+    },
+    "curious-bubble": {
+      "kind": "effect",
+      "label": "갸웃 · 호기심",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/curious-bubble.svg",
+        "png": "assets/curious-bubble.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.2,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [48, -58]
+      }
+    },
+    "idea-bulb": {
+      "kind": "effect",
+      "label": "아하 · 아이디어",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/idea-bulb.svg",
+        "png": "assets/idea-bulb.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.4,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, -65]
+      }
+    },
+    "joy-eyes": {
+      "kind": "expression",
+      "label": "방긋 · 웃는 눈",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/joy-eyes.svg",
+        "png": "assets/joy-eyes.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.4,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.12, 1],
+          [0.85, 1],
+          [1, 0]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, 0]
+      }
+    },
+    "focus-eyes": {
+      "kind": "expression",
+      "label": "집중 · 또렷한 눈",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/focus-eyes.svg",
+        "png": "assets/focus-eyes.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.3,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.12, 1],
+          [0.85, 1],
+          [1, 0]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, 0]
+      }
+    },
+    "oops-drop": {
+      "kind": "effect",
+      "label": "앗 · 땀방울",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/oops-drop.svg",
+        "png": "assets/oops-drop.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 0.9,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.12, 1],
+          [0.8, 1],
+          [1, 0]
+        ],
+        "y": [
+          [0, -10],
+          [0.4, 0],
+          [1, 22]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.35, 1.06],
+          [1, 1.15]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [42, -21]
+      }
+    },
+    "relief-puff": {
+      "kind": "effect",
+      "label": "휴 · 안도의 숨",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/relief-puff.svg",
+        "png": "assets/relief-puff.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 0.8],
+          [1, 0]
+        ],
+        "x": [
+          [0, -4],
+          [1, 22]
+        ],
+        "scaleX": [
+          [0, 0.6],
+          [1, 1.25]
+        ],
+        "scaleY": [
+          [0, 0.65],
+          [1, 1.1]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [48, 16]
+      }
+    },
+    "proud-stars": {
+      "kind": "effect",
+      "label": "뿌듯 · 반짝임",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/proud-stars.svg",
+        "png": "assets/proud-stars.png"
+      },
+      "parts": [
+        {
+          "id": "star-0",
+          "files": {
+            "svg": "assets/proud-stars--star-0.svg",
+            "png": "assets/proud-stars--star-0.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 51],
+          "tracks": {
+            "y": [
+              [0.0, 8],
+              [0.5, 0],
+              [1.0, -12]
+            ],
+            "rotation": [
+              [0.0, -0.12],
+              [0.5, 0],
+              [1.0, 0.15]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "star-1",
+          "files": {
+            "svg": "assets/proud-stars--star-1.svg",
+            "png": "assets/proud-stars--star-1.png"
+          },
+          "size": [128, 128],
+          "pivot": [26, 77],
+          "tracks": {
+            "y": [
+              [0.0, 8],
+              [0.5, 0],
+              [1.0, -16]
+            ],
+            "rotation": [
+              [0.0, -0.12],
+              [0.5, 0],
+              [1.0, 0.15]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "star-2",
+          "files": {
+            "svg": "assets/proud-stars--star-2.svg",
+            "png": "assets/proud-stars--star-2.png"
+          },
+          "size": [128, 128],
+          "pivot": [103, 82],
+          "tracks": {
+            "y": [
+              [0.0, 8],
+              [0.5, 0],
+              [1.0, -20]
+            ],
+            "rotation": [
+              [0.0, -0.12],
+              [0.5, 0],
+              [1.0, 0.15]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        }
+      ],
+      "sockets": {},
+      "duration": 1.3,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, -65]
+      }
+    },
+    "heart-pop": {
+      "kind": "effect",
+      "label": "좋아 · 작은 마음",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/heart-pop.svg",
+        "png": "assets/heart-pop.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.25,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.8, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.5],
+          [0.2, 1.08],
+          [0.4, 0.93],
+          [0.65, 1.06],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.5],
+          [0.2, 1.08],
+          [0.4, 0.93],
+          [0.65, 1.06],
+          [1, 1]
+        ],
+        "y": [
+          [0, 7],
+          [1, -14]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [46, -46]
+      }
+    },
+    "tiny-confetti": {
+      "kind": "effect",
+      "label": "해냈다 · 종이 꽃가루",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/tiny-confetti.svg",
+        "png": "assets/tiny-confetti.png"
+      },
+      "parts": [
+        {
+          "id": "confetti-0",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-0.svg",
+            "png": "assets/tiny-confetti--confetti-0.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, -12],
+              [1.0, -24]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 20]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, -0.24],
+              [1.0, -0.48]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-1",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-1.svg",
+            "png": "assets/tiny-confetti--confetti-1.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, -8],
+              [1.0, -16]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 22]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, -0.16],
+              [1.0, -0.32]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-2",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-2.svg",
+            "png": "assets/tiny-confetti--confetti-2.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, -4],
+              [1.0, -8]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 24]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, -0.08],
+              [1.0, -0.16]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-3",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-3.svg",
+            "png": "assets/tiny-confetti--confetti-3.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, 0],
+              [1.0, 0]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 26]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, 0.0],
+              [1.0, 0.0]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-4",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-4.svg",
+            "png": "assets/tiny-confetti--confetti-4.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, 4],
+              [1.0, 8]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 28]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, 0.08],
+              [1.0, 0.16]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-5",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-5.svg",
+            "png": "assets/tiny-confetti--confetti-5.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, 8],
+              [1.0, 16]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 30]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, 0.16],
+              [1.0, 0.32]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "confetti-6",
+          "files": {
+            "svg": "assets/tiny-confetti--confetti-6.svg",
+            "png": "assets/tiny-confetti--confetti-6.png"
+          },
+          "size": [128, 128],
+          "pivot": [64, 64],
+          "tracks": {
+            "x": [
+              [0.0, 0],
+              [0.5, 12],
+              [1.0, 24]
+            ],
+            "y": [
+              [0.0, 10],
+              [0.5, -8],
+              [1.0, 32]
+            ],
+            "rotation": [
+              [0.0, 0],
+              [0.5, 0.24],
+              [1.0, 0.48]
+            ],
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ]
+          }
+        },
+        {
+          "id": "burst",
+          "files": {
+            "svg": "assets/tiny-confetti--burst.svg",
+            "png": "assets/tiny-confetti--burst.png"
+          },
+          "size": [128, 128],
+          "pivot": [63, 60],
+          "tracks": {
+            "opacity": [
+              [0.0, 0],
+              [0.5, 1],
+              [1.0, 0]
+            ],
+            "scaleX": [
+              [0.0, 0.6],
+              [0.5, 1],
+              [1.0, 0.8]
+            ],
+            "scaleY": [
+              [0.0, 0.6],
+              [0.5, 1],
+              [1.0, 0.8]
+            ]
+          }
+        }
+      ],
+      "sockets": {},
+      "duration": 1.4,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, -65]
+      }
+    },
+    "effort-puffs": {
+      "kind": "effect",
+      "label": "영차 · 힘내기",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/effort-puffs.svg",
+        "png": "assets/effort-puffs.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 0.85,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [0, -62]
+      }
+    },
+    "sleep-z": {
+      "kind": "effect",
+      "label": "졸음 · 느린 숨",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/sleep-z.svg",
+        "png": "assets/sleep-z.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.8,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "head",
+        "offset": [38, -57]
+      }
+    },
+    "success-badge": {
+      "kind": "effect",
+      "label": "완료 · 체크 배지",
+      "size": [128, 128],
+      "pivot": [64, 64],
+      "files": {
+        "svg": "assets/success-badge.svg",
+        "png": "assets/success-badge.png"
+      },
+      "parts": [],
+      "sockets": {},
+      "duration": 1.2,
+      "loop": false,
+      "tracks": {
+        "opacity": [
+          [0, 0],
+          [0.15, 1],
+          [0.75, 1],
+          [1, 0]
+        ],
+        "scaleX": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "scaleY": [
+          [0, 0.7],
+          [0.2, 1.08],
+          [0.34, 1],
+          [1, 1]
+        ],
+        "y": [
+          [0, 5],
+          [0.2, 0],
+          [1, -8]
+        ]
+      },
+      "suggestedAttachment": {
+        "socket": "device",
+        "offset": [0, -80]
+      }
+    },
+    "tool-pointer": {
+      "kind": "tool",
+      "label": "pointer",
+      "files": {
+        "png": "assets/tool-pointer.png"
+      },
+      "size": [150.625, 18.125],
+      "pivot": [14.5, 9.0],
+      "sockets": {
+        "primary": {
+          "position": [14.5, 9.0]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-ruler": {
+      "kind": "tool",
+      "label": "ruler",
+      "files": {
+        "png": "assets/tool-ruler.png"
+      },
+      "size": [162.125, 28.125],
+      "pivot": [10.0, 14.0],
+      "sockets": {
+        "primary": {
+          "position": [10.0, 14.0]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-compass": {
+      "kind": "tool",
+      "label": "compass",
+      "files": {
+        "png": "assets/tool-compass.png"
+      },
+      "size": [132.125, 87.125],
+      "pivot": [5.0, 46.0],
+      "sockets": {
+        "primary": {
+          "position": [5.0, 46.0]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-magnifier": {
+      "kind": "tool",
+      "label": "magnifier",
+      "files": {
+        "png": "assets/tool-magnifier.png"
+      },
+      "size": [140.625, 76.125],
+      "pivot": [14.5, 38.0],
+      "sockets": {
+        "primary": {
+          "position": [14.5, 38.0]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-book": {
+      "kind": "tool",
+      "label": "book",
+      "files": {
+        "png": "assets/tool-book.png"
+      },
+      "size": [77.625, 56.75],
+      "pivot": [74.8125, 51.65625],
+      "sockets": {
+        "primary": {
+          "position": [74.8125, 51.65625]
+        },
+        "secondary": {
+          "position": [2.8125, 51.65625]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-equation_tile": {
+      "kind": "tool",
+      "label": "equation_tile",
+      "files": {
+        "png": "assets/tool-equation_tile.png"
+      },
+      "size": [80.125, 67.0],
+      "pivot": [72.0, 64.0],
+      "sockets": {
+        "primary": {
+          "position": [72.0, 64.0]
+        },
+        "secondary": {
+          "position": [8.0, 64.0]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-weight": {
+      "kind": "tool",
+      "label": "weight",
+      "files": {
+        "png": "assets/tool-weight.png"
+      },
+      "size": [90.125, 46.625],
+      "pivot": [81.0, 42.75],
+      "sockets": {
+        "primary": {
+          "position": [81.0, 42.75]
+        },
+        "secondary": {
+          "position": [9.0, 42.75]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    },
+    "tool-trophy": {
+      "kind": "tool",
+      "label": "trophy",
+      "files": {
+        "png": "assets/tool-trophy.png"
+      },
+      "size": [78.0, 74.875],
+      "pivot": [39.0, 57.75],
+      "sockets": {
+        "primary": {
+          "position": [39.0, 57.75]
+        }
+      },
+      "parts": [],
+      "duration": 1,
+      "loop": true
+    }
+  },
+  "characters": {
+    "mascot": "character.json"
+  },
+  "tags": [
+    {
+      "id": "polynomial-press",
+      "label": "다항식 · 항 조립 프레스",
+      "scene": "polynomial-press",
+      "asset": "polynomial-press"
+    },
+    {
+      "id": "equation-balance",
+      "label": "방정식 · 균형 저울",
+      "scene": "equation-balance",
+      "asset": "equation-balance"
+    },
+    {
+      "id": "function-machine",
+      "label": "함수 · 변환 기계",
+      "scene": "function-machine",
+      "asset": "function-machine"
+    },
+    {
+      "id": "growth-dial",
+      "label": "지수·로그 · 성장 다이얼",
+      "scene": "growth-dial",
+      "asset": "growth-dial"
+    },
+    {
+      "id": "unit-circle",
+      "label": "삼각함수 · 회전 단위원",
+      "scene": "unit-circle",
+      "asset": "unit-circle"
+    },
+    {
+      "id": "sequence-steps",
+      "label": "수열 · 숫자 계단",
+      "scene": "sequence-steps",
+      "asset": "sequence-steps"
+    },
+    {
+      "id": "limit-gate",
+      "label": "극한 · 가까워지는 관문",
+      "scene": "limit-gate",
+      "asset": "limit-gate"
+    },
+    {
+      "id": "tangent-probe",
+      "label": "미분 · 접선 탐침",
+      "scene": "tangent-probe",
+      "asset": "tangent-probe"
+    },
+    {
+      "id": "area-collector",
+      "label": "적분 · 넓이 수집기",
+      "scene": "area-collector",
+      "asset": "area-collector"
+    },
+    {
+      "id": "branch-router",
+      "label": "경우의 수 · 분기 장치",
+      "scene": "branch-router",
+      "asset": "branch-router"
+    },
+    {
+      "id": "chance-drum",
+      "label": "확률 · 주사위 추첨기",
+      "scene": "chance-drum",
+      "asset": "chance-drum"
+    },
+    {
+      "id": "data-counter",
+      "label": "통계 · 데이터 카운터",
+      "scene": "data-counter",
+      "asset": "data-counter"
+    },
+    {
+      "id": "set-lenses",
+      "label": "집합 · 겹침 렌즈",
+      "scene": "set-lenses",
+      "asset": "set-lenses"
+    },
+    {
+      "id": "coordinate-locator",
+      "label": "좌표 · 위치 탐색기",
+      "scene": "coordinate-locator",
+      "asset": "coordinate-locator"
+    },
+    {
+      "id": "circle-compass",
+      "label": "원 · 회전 컴퍼스",
+      "scene": "circle-compass",
+      "asset": "circle-compass"
+    },
+    {
+      "id": "conic-orbit",
+      "label": "이차곡선 · 타원 궤도",
+      "scene": "conic-orbit",
+      "asset": "conic-orbit"
+    },
+    {
+      "id": "vector-arrow",
+      "label": "벡터 · 방향 조종간",
+      "scene": "vector-arrow",
+      "asset": "vector-arrow"
+    },
+    {
+      "id": "solid-projector",
+      "label": "공간도형 · 입체 투영기",
+      "scene": "solid-projector",
+      "asset": "solid-projector"
+    }
+  ],
+  "scenes": {
+    "polynomial-press": {
+      "id": "polynomial-press",
+      "label": "다항식 · 항 조립 프레스",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "push",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "polynomial-press",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "success-badge",
+          "parent": "apparatus",
+          "socket": "output",
+          "position": [0, -38],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "equation-balance": {
+      "id": "equation-balance",
+      "label": "방정식 · 균형 저울",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "balance",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "equation-balance",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "joy-eyes",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, 0],
+          "scale": 1,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "function-machine": {
+      "id": "function-machine",
+      "label": "함수 · 변환 기계",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "function-machine",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "idea-bulb",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "growth-dial": {
+      "id": "growth-dial",
+      "label": "지수·로그 · 성장 다이얼",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "inspect",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "growth-dial",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "proud-stars",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "unit-circle": {
+      "id": "unit-circle",
+      "label": "삼각함수 · 회전 단위원",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "unit-circle",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "focus-eyes",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, 0],
+          "scale": 1,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "sequence-steps": {
+      "id": "sequence-steps",
+      "label": "수열 · 숫자 계단",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "present",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "sequence-steps",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "tiny-confetti",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "limit-gate": {
+      "id": "limit-gate",
+      "label": "극한 · 가까워지는 관문",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "inspect",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "limit-gate",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "curious-bubble",
+          "parent": "hero",
+          "socket": "head",
+          "position": [45, -45],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "tangent-probe": {
+      "id": "tangent-probe",
+      "label": "미분 · 접선 탐침",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "tangent-probe",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "focus-eyes",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, 0],
+          "scale": 1,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "area-collector": {
+      "id": "area-collector",
+      "label": "적분 · 넓이 수집기",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "present",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "area-collector",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "success-badge",
+          "parent": "apparatus",
+          "socket": "output",
+          "position": [0, -38],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "branch-router": {
+      "id": "branch-router",
+      "label": "경우의 수 · 분기 장치",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "branch-router",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "curious-bubble",
+          "parent": "hero",
+          "socket": "head",
+          "position": [45, -45],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "chance-drum": {
+      "id": "chance-drum",
+      "label": "확률 · 주사위 추첨기",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "throw",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "chance-drum",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "oops-drop",
+          "parent": "hero",
+          "socket": "head",
+          "position": [45, -45],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "data-counter": {
+      "id": "data-counter",
+      "label": "통계 · 데이터 카운터",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "present",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "data-counter",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "proud-stars",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "set-lenses": {
+      "id": "set-lenses",
+      "label": "집합 · 겹침 렌즈",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "set-lenses",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "heart-pop",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "coordinate-locator": {
+      "id": "coordinate-locator",
+      "label": "좌표 · 위치 탐색기",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "inspect",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "coordinate-locator",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "focus-eyes",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, 0],
+          "scale": 1,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "circle-compass": {
+      "id": "circle-compass",
+      "label": "원 · 회전 컴퍼스",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "circle-compass",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "idea-bulb",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "conic-orbit": {
+      "id": "conic-orbit",
+      "label": "이차곡선 · 타원 궤도",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "conic-orbit",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "proud-stars",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "vector-arrow": {
+      "id": "vector-arrow",
+      "label": "벡터 · 방향 조종간",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "point",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "vector-arrow",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "effort-puffs",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    },
+    "solid-projector": {
+      "id": "solid-projector",
+      "label": "공간도형 · 입체 투영기",
+      "size": [720, 480],
+      "duration": 6,
+      "loop": true,
+      "posterTime": 2.4,
+      "nodes": [
+        {
+          "id": "hero",
+          "character": "mascot",
+          "action": "present",
+          "position": [178, 330],
+          "scale": 0.95,
+          "z": 1
+        },
+        {
+          "id": "apparatus",
+          "asset": "solid-projector",
+          "position": [478, 289],
+          "scale": 1.22,
+          "z": 2,
+          "start": 0,
+          "duration": 6,
+          "tracks": {
+            "opacity": [
+              [0, 0],
+              [0.08, 1],
+              [0.88, 1],
+              [1, 0]
+            ],
+            "scaleX": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "scaleY": [
+              [0, 0.8],
+              [0.09, 1.03],
+              [0.16, 1],
+              [0.88, 1],
+              [1, 0.92]
+            ],
+            "y": [
+              [0, 18],
+              [0.16, 0],
+              [0.88, 0],
+              [1, 14]
+            ]
+          }
+        },
+        {
+          "id": "reaction",
+          "asset": "idea-bulb",
+          "parent": "hero",
+          "socket": "head",
+          "position": [0, -66],
+          "scale": 0.75,
+          "start": 2.1,
+          "duration": 1.4,
+          "z": 3
+        },
+        {
+          "id": "finish",
+          "asset": "proud-stars",
+          "parent": "apparatus",
+          "position": [0, -110],
+          "start": 4.4,
+          "duration": 1,
+          "scale": 0.65,
+          "z": 4
+        }
+      ]
+    }
+  },
+  "revision": "f288e961b7f2fb1a"
+}

@@ -1,0 +1,24 @@
+{
+  "deviceCount": 18,
+  "newEffectCount": 12,
+  "handToolCount": 8,
+  "characterMotionCount": 22,
+  "articulatedPartCount": 80,
+  "nodeTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "typescriptConsumer": "passed",
+  "eslint": "passed",
+  "browserScenesLoaded": 18,
+  "browserEffectTriggers": 12,
+  "movingSocketReview": "unit-circle handle with proud-stars",
+  "isolatedProject": {
+    "url": "http://127.0.0.1:8771/brand/kit/examples/minimal.html",
+    "repositoryAccessRequired": false,
+    "result": "loaded and rendered",
+    "consoleErrors": 0
+  },
+  "screenshots": ["demo-preview.png", "isolated-example.png"],
+  "runtimeDependencies": []
+}

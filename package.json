@@ -1,8 +1,8 @@
 {
   "name": "@kicearena/assets",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
-  "description": "Versioned KICE product icons, rank artwork and illustration assets.",
+  "description": "Versioned KICE icons, mascot animation, math apparatus and effects.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kicearena/assets.git"
@@ -29,14 +29,21 @@
       "import": "./dist/vite.js"
     },
     "./catalog.json": "./catalog.json",
-    "./assets/*": "./assets/*"
+    "./assets/*": "./assets/*",
+    "./animation": {
+      "types": "./dist/animation.d.ts",
+      "import": "./dist/animation.js"
+    },
+    "./animation/*": "./assets/animation/*",
+    "./animation/catalog.json": "./assets/animation/catalog.json"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "check": "tsc --noEmit -p tsconfig.json && prettier --check .",
     "demo": "vite --config vite.demo.config.ts --host 127.0.0.1",
-    "demo:build": "vite build --config vite.demo.config.ts"
+    "demo:build": "vite build --config vite.demo.config.ts",
+    "catalog:update": "bun scripts/update-catalog.mjs"
   },
   "devDependencies": {
     "typescript": "5.9.3",
