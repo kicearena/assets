@@ -19,6 +19,11 @@ export interface SceneNode {
   start?: number;
   duration?: number;
   tracks?: Tracks;
+  /** Clip speed and offset; node visibility/tracks stay in scene seconds. */
+  timeScale?: number;
+  timeOffset?: number;
+  /** Disable the clip-authored hand prop when composing a separate tool node. */
+  showMotionTool?: boolean;
 }
 export interface Scene {
   id: string;
@@ -86,6 +91,7 @@ export function createPlayer(
     reducedMotion?: boolean;
     pixelRatio?: number;
     background?: string | null;
+    imageFormat?: "svg" | "png";
     onFrame?: (frame: { time: number; duration: number }) => void;
   },
 ): Promise<Player>;

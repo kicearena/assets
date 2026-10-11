@@ -4,20 +4,20 @@
   "assets": {
     "animation/CREDITS": {
       "path": "animation/CREDITS.md",
-      "sha256": "47d860bcaf09d80a0201710505a7fc879b9704dd55472d9498c4ef5640468024",
-      "bytes": 1455,
+      "sha256": "af0daad88e5de2561f6667b44b54bfed354822d7fcef068492ebca827c28dc21",
+      "bytes": 1417,
       "mediaType": "text/markdown; charset=utf-8"
     },
     "animation/FORMAT": {
       "path": "animation/FORMAT.md",
-      "sha256": "d64148e741c0baff7e3867e6b2df4b4fa4883337b18509db728d2a6a7447fdb2",
-      "bytes": 2853,
+      "sha256": "08838049d4158b75a643a5637d04a1bec918970c7f3fccaf2bc3d58a1b562867",
+      "bytes": 3167,
       "mediaType": "text/markdown; charset=utf-8"
     },
     "animation/README": {
       "path": "animation/README.md",
-      "sha256": "d9126286281c9c211c648b243d69b19dada5860227e6f6dcf750aad21e7db3ba",
-      "bytes": 2263,
+      "sha256": "58c71a649ce888a5ba185850cdbeb90353424dece617b873a47d2fa62c572385",
+      "bytes": 2567,
       "mediaType": "text/markdown; charset=utf-8"
     },
     "animation/assets/area-collector--bin.png": {
@@ -1396,8 +1396,8 @@
     },
     "animation/character": {
       "path": "animation/character.json",
-      "sha256": "afd0c030a62db72bad99617687ffc6f048194d82638975c7d670d2b5be2190b2",
-      "bytes": 494537,
+      "sha256": "c4d2384f23b5a3dd9912b26b158c5c12ef1a54ffae248141ec67736a03f1b934",
+      "bytes": 504699,
       "mediaType": "application/json"
     },
     "animation/device-catalog": {
@@ -1411,6 +1411,12 @@
       "sha256": "e150cdd6d75d9a6f673456817dc3353837de441c7dc728d9ac07b754bedc36c9",
       "bytes": 84714,
       "mediaType": "image/png"
+    },
+    "animation/examples/composition": {
+      "path": "animation/examples/composition.html",
+      "sha256": "805464efee2fcd7d205b2a89fbaa41c0aefb06bd799a9ae6b957d852009c87d7",
+      "bytes": 4515,
+      "mediaType": "text/html; charset=utf-8"
     },
     "animation/examples/demo.css": {
       "path": "animation/examples/demo.css",
@@ -1438,20 +1444,20 @@
     },
     "animation/runtime/kit.d": {
       "path": "animation/runtime/kit.d.ts",
-      "sha256": "cf05635fe404f9b05ba78cbca81add125f8cfaa450d5a5c7ab7ed68f44b5e7bc",
-      "bytes": 3673,
+      "sha256": "51175ca2fce4c6280ade0920367c331af8f317c422d185638e6e932283f51fdd",
+      "bytes": 3939,
       "mediaType": "text/plain; charset=utf-8"
     },
     "animation/runtime/kit": {
       "path": "animation/runtime/kit.js",
-      "sha256": "cece160351397a3c7f5e3fbb7c94cb9bbc0dde16abf33da39a87ce5ec24f5e5d",
-      "bytes": 15888,
+      "sha256": "efd806c78b2e69c7ab18c3033c3e3b4017e15cd04cc8304b54b156c179b492d1",
+      "bytes": 16813,
       "mediaType": "text/javascript; charset=utf-8"
     },
     "animation/validation": {
       "path": "animation/validation.json",
-      "sha256": "a5d1f46fe02053e48224b5d5aae55807a20abaceeff458422eee2b7a829b17a2",
-      "bytes": 651,
+      "sha256": "a684e810ae49454355cfcacae2a84329b4975d1492cfbc91ebb70d3c4cdf292a",
+      "bytes": 703,
       "mediaType": "application/json"
     },
     "icons/hero-motion": {

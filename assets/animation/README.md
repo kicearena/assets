@@ -4,6 +4,8 @@ This directory is the portable art-and-scene bundle shipped by `@kicearena/asset
 
 ## Install the package
 
+0.2.0 is prepared in this repository. Registry publication is a separate release step. Until published, install the tarball produced by `bun run build && npm pack` at the repository root.
+
 ```sh
 npm install --save-exact @kicearena/assets@0.2.0
 ```
@@ -33,4 +35,6 @@ For a lightweight app, copy this `animation/` directory into its static asset lo
 
 The runtime is an ES module using browser Canvas 2D, fetch, SVG image decoding and requestAnimationFrame. It has no framework or game-engine dependency. `runtime/kit.d.ts` declares the API. `FORMAT.md` describes the coordinate, pivot, socket, keyframe and scene formats. `catalog.json` maps every item to the versioned package catalog.
 
-`../icons/topics/mascot-v2/` contains 4096×4096 transparent exports; `../icons/topics/compact/mascot-v2/` contains 1024×1024 derivatives. `device-catalog.png` and `effect-catalog.png` show the original silhouettes. `CREDITS.md` records CMU motion-data attribution and use terms.
+`../icons/topics/` contains 4096×4096 transparent exports; `../icons/topics/compact/` contains 1024×1024 derivatives. `device-catalog.png` and `effect-catalog.png` show the original silhouettes. `CREDITS.md` records CMU motion-data attribution and use terms.
+
+See [composition and web/video integration](../../docs/composition.md) for independent tools, effects and deterministic video frames.

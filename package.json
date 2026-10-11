@@ -13,7 +13,8 @@
     "catalog.json",
     "README.md",
     "LICENSE",
-    "docs"
+    "docs",
+    "provenance"
   ],
   "exports": {
     ".": {

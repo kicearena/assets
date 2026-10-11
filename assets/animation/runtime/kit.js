@@ -124,6 +124,7 @@ async function json(url) {
 }
 async function loadImage(url) {
   const image = new Image();
+  image.crossOrigin = "anonymous";
   image.src = url;
   await image.decode();
   return image;
@@ -154,10 +155,15 @@ export async function createPlayer(
     reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches,
     pixelRatio = Math.min(devicePixelRatio || 1, 3),
     background = null,
+    imageFormat = "svg",
     onFrame = () => {},
   } = {},
 ) {
   if (!baseURL) throw new Error("baseURL is required");
+  if (!["svg", "png"].includes(imageFormat))
+    throw new Error("Invalid imageFormat");
+  if (!Number.isFinite(pixelRatio) || pixelRatio <= 0)
+    throw new Error("Invalid pixelRatio");
   const kit = await loadKit(baseURL),
     ctx = canvas.getContext("2d");
   if (!ctx) throw new Error("Canvas 2D unavailable");
@@ -172,7 +178,8 @@ export async function createPlayer(
     request = 0,
     transients = [],
     nextId = 0;
-  const assetImage = (part) => part.files.svg ?? part.files.png;
+  const assetImage = (part) =>
+    imageFormat === "png" ? part.files.png : (part.files.svg ?? part.files.png);
   async function prepareAsset(id) {
     const a = kit.catalog.assets[id];
     if (!a) throw new Error(`Unknown asset: ${id}`);
@@ -191,12 +198,23 @@ export async function createPlayer(
     }
   }
   function validateScene(value) {
-    if (!value?.duration || !Array.isArray(value.nodes))
+    if (
+      !Number.isFinite(value?.duration) ||
+      value.duration <= 0 ||
+      !value.size?.every((v) => Number.isFinite(v) && v > 0) ||
+      !Array.isArray(value.nodes)
+    )
       throw new Error("Scene needs duration and nodes");
     const ids = new Set();
     for (const n of value.nodes) {
       if (ids.has(n.id)) throw new Error(`Duplicate node: ${n.id}`);
       ids.add(n.id);
+      if (
+        (n.timeScale !== undefined &&
+          (!Number.isFinite(n.timeScale) || n.timeScale < 0)) ||
+        (n.timeOffset !== undefined && !Number.isFinite(n.timeOffset))
+      )
+        throw new Error(`Invalid timing: ${n.id}`);
       if (Boolean(n.asset) === Boolean(n.character))
         throw new Error(`Node ${n.id} needs exactly one asset or character`);
     }
@@ -238,7 +256,7 @@ export async function createPlayer(
         else {
           const a =
             kit.characters[n.character].motions[n.action].toolAttachment;
-          if (a) await prepareAsset(a.tool);
+          if (a && n.showMotionTool !== false) await prepareAsset(a.tool);
         }
       }),
     );
@@ -273,7 +291,7 @@ export async function createPlayer(
     }
     ctx.restore();
   }
-  function characterDraw(character, state) {
+  function characterDraw(character, state, showMotionTool) {
     const { model } = character,
       { matrices, ends } = state;
     ctx.save();
@@ -296,7 +314,7 @@ export async function createPlayer(
       }
     }
     const attachment = state.motion.toolAttachment;
-    if (attachment) {
+    if (attachment && showMotionTool !== false) {
       const bone = model.sockets[attachment.socket],
         m = matrices[bone],
         rotation = blend(
@@ -335,7 +353,9 @@ export async function createPlayer(
           ? seconds - node.start
           : t - (node.start ?? 0),
         duration = node.duration ?? current.duration;
-      const active = localTime >= 0 && localTime < duration;
+      const active = localTime >= 0 && localTime <= duration;
+      const contentTime =
+        Math.max(0, localTime) * (node.timeScale ?? 1) + (node.timeOffset ?? 0);
       const v = tracks(
         node.tracks,
         Math.max(0, Math.min(1, localTime / duration)),
@@ -363,7 +383,7 @@ export async function createPlayer(
             );
           } else {
             const a = kit.catalog.assets[owner.asset],
-              socket = assetSocket(a, node.socket, frame.localTime);
+              socket = assetSocket(a, node.socket, frame.contentTime);
             parent = multiply(parent, transform(...socket));
           }
         }
@@ -384,11 +404,12 @@ export async function createPlayer(
         matrix,
         opacity: active ? opacity * v.opacity : 0,
         localTime,
+        contentTime,
         character: node.character
           ? characterFrame(
               kit.characters[node.character],
               node.action,
-              Math.max(0, localTime),
+              contentTime,
             )
           : null,
       };
@@ -402,8 +423,12 @@ export async function createPlayer(
       apply(ctx, value.matrix);
       ctx.globalAlpha *= value.opacity;
       if (node.character)
-        characterDraw(kit.characters[node.character], value.character);
-      else assetDraw(kit.catalog.assets[node.asset], value.localTime);
+        characterDraw(
+          kit.characters[node.character],
+          value.character,
+          node.showMotionTool,
+        );
+      else assetDraw(kit.catalog.assets[node.asset], value.contentTime);
       ctx.restore();
     }
     transients = transients.filter(

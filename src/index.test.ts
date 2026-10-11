@@ -6,7 +6,7 @@ import { ASSETS, ASSET_VERSION, assetUrl, type AssetId } from "./index.js";
 import { assetFilePath } from "./node.js";
 describe("versioned assets", () => {
   it("preserves every inventoried asset and fully decodes its original bytes", async () => {
-    expect(Object.keys(ASSETS)).toHaveLength(291);
+    expect(Object.keys(ASSETS)).toHaveLength(292);
     for (const id of Object.keys(ASSETS) as AssetId[]) {
       const bytes = readFileSync(assetFilePath(id));
       expect(bytes.length).toBe(ASSETS[id].bytes);

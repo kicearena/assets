@@ -8,7 +8,7 @@ KICE Arena's versioned rank and product artwork, 4K topic icons, and portable ma
 
 ## Use
 
-Install directly from the public npm registry:
+Version 0.2.0 is prepared here; registry publication is a separate release step. Until published, run `bun run build && npm pack` and install the resulting tarball. After publication:
 
 ```sh
 npm install --save-exact @kicearena/assets@0.2.0
@@ -27,7 +27,7 @@ Vite consumers add `kiceAssets()` from `@kicearena/assets/vite` to their plugins
 
 ## CDN contract
 
-Upload the emitted `kice-assets/0.2.0` directory unchanged. The optional CDN origin changes the host only; URLs retain the version and relative filename. Serve immutable versions with `Cache-Control: public, max-age=31536000, immutable`. Never overwrite a published version. [catalog.json](catalog.json) includes size, SHA-256 and media type for every original and new asset. CORS is only needed for canvas pixel access; a CDN rollout is separate from installing this package.
+Upload the emitted `kice-assets/0.2.0` directory unchanged. The optional CDN origin changes the host only; URLs retain the version and relative filename. Serve immutable versions with `Cache-Control: public, max-age=31536000, immutable`. Never overwrite a published version. [catalog.json](catalog.json) includes size, SHA-256 and media type for every original and new asset. A cross-origin CDN must allow CORS for JSON, images and canvas export; a CDN rollout is separate from installing this package.
 
 ## Revised topic icons and mascot animation
 
@@ -70,3 +70,5 @@ After adding or updating files under `assets/`, run `bun run catalog:update` to 
 ## License
 
 [MIT](LICENSE) © 2026 KICE Arena contributors. Third-party provider symbols and fonts are not part of this package; they retain their own ownership and licenses in the application. The KICE name and marks do not imply endorsement.
+
+See [composition and web/video integration](docs/composition.md) for independent tools, effects and deterministic video frames.

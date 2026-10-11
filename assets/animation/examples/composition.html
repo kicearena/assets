@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>KICE · 자유 조합</title>
+    <style>
+      body {
+        font: 16px system-ui;
+        background: #f8f4ed;
+        color: #343329;
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      canvas {
+        width: 100%;
+        height: auto;
+        background: white;
+        border-radius: 20px;
+      }
+      button,
+      select {
+        font: inherit;
+        padding: 10px;
+        margin: 5px;
+      }
+      p {
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>한 캐릭터, 독립된 요소</h1>
+    <p>
+      도구 교체 · 캐릭터 없는 장치 · 영상 프레임. 캐릭터의 동일한 비율을
+      유지합니다.
+    </p>
+    <select id="mode">
+      <option value="web">홈페이지 · 손 도구 교체</option>
+      <option value="device">캐릭터 없는 장치</option>
+      <option value="video">영상 · 1920×1080 PNG</option></select
+    ><button id="play">재생</button><button id="pause">정지</button
+    ><button id="frame">2.4초 고정</button><button id="save">PNG 저장</button
+    ><canvas id="stage" aria-label="KICE 캐릭터와 수학 장치 자유 조합"></canvas>
+    <p id="status" role="status"></p>
+    <script type="module">
+      import { createPlayer } from "../runtime/kit.js";
+      const canvas = document.querySelector("canvas"),
+        status = document.querySelector("#status");
+      const hero = {
+        id: "hero",
+        character: "mascot",
+        action: "hold_pointer",
+        position: [230, 350],
+        showMotionTool: false,
+        timeScale: 0.85,
+      };
+      const device = {
+        id: "device",
+        asset: "unit-circle",
+        position: [480, 300],
+        z: 1,
+      };
+      const pointer = {
+        id: "pointer",
+        asset: "tool-pointer",
+        parent: "hero",
+        socket: "right_hand",
+        followRotation: true,
+        rotation: 0.2,
+        z: 2,
+      };
+      const face = {
+        id: "face",
+        asset: "joy-eyes",
+        parent: "hero",
+        socket: "head",
+        timeScale: 0,
+        timeOffset: 0.4,
+        z: 3,
+      };
+      const stars = {
+        id: "stars",
+        asset: "proud-stars",
+        parent: "device",
+        start: 2,
+        duration: 1,
+        position: [0, -100],
+        scale: 0.65,
+        z: 3,
+      };
+      let player,
+        request = 0;
+      async function mount() {
+        const ticket = ++request;
+        player?.dispose();
+        const mode = document.querySelector("#mode").value;
+        const scene = {
+          id: "composition",
+          label: "자유 조합",
+          size: mode === "video" ? [960, 540] : [720, 480],
+          duration: 6,
+          loop: mode !== "video",
+          posterTime: 2.4,
+          nodes:
+            mode === "device"
+              ? [device, stars]
+              : [hero, pointer, device, face, stars],
+        };
+        const next = await createPlayer(canvas, {
+          baseURL: "../",
+          scene,
+          pixelRatio: mode === "video" ? 2 : devicePixelRatio,
+          imageFormat: mode === "video" ? "png" : "svg",
+          ...(mode === "video" ? { reducedMotion: false } : {}),
+        });
+        if (ticket !== request) {
+          next.dispose();
+          return;
+        }
+        player = next;
+        player.render(2.4);
+        status.textContent = `${canvas.width} × ${canvas.height} · ${mode === "video" ? "PNG 고정 시각 렌더" : "SVG 투명 배경"}`;
+      }
+      document.querySelector("#mode").onchange = () =>
+        mount().catch((e) => (status.textContent = e.message));
+      document.querySelector("#play").onclick = () => player.play();
+      document.querySelector("#pause").onclick = () => player.pause();
+      document.querySelector("#frame").onclick = () => {
+        player.pause();
+        player.render(2.4);
+      };
+      document.querySelector("#save").onclick = () =>
+        canvas.toBlob((blob) => {
+          if (!blob) return;
+          const url = URL.createObjectURL(blob),
+            a = document.createElement("a");
+          a.href = url;
+          a.download = "kice-frame.png";
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }, "image/png");
+      addEventListener("pagehide", () => player?.dispose());
+      await mount();
+    </script>
+  </body>
+</html>
