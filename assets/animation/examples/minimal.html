@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>독립 프로젝트 통합 예제</title
+  ><style>
+    body {
+      font-family: system-ui;
+      background: #f4f3ed;
+      margin: 24px;
+    }
+    canvas {
+      display: block;
+      width: min(100%, 720px);
+      background: white;
+    }
+    button {
+      font: inherit;
+      padding: 12px;
+      margin: 12px 0;
+    }
+  </style>
+  <h1>프레임워크 없이 사용하는 예제</h1>
+  <canvas id="mascot" aria-label="함수 기계와 캐릭터"></canvas
+  ><button id="react">아하!</button>
+  <p id="status" role="status">불러오는 중</p>
+  <script type="module">
+    import { createPlayer } from "../runtime/kit.js";
+    try {
+      const player = await createPlayer(document.querySelector("canvas"), {
+        baseURL: new URL("../", document.baseURI),
+        scene: "function-machine",
+      });
+      player.play();
+      document.querySelector("#status").textContent =
+        "독립 에셋 패키지 로드 완료";
+      document.querySelector("button").onclick = () => player.emit("idea-bulb");
+      window.addEventListener("pagehide", () => player.dispose());
+    } catch (e) {
+      document.querySelector("#status").textContent = e.message;
+    }
+  </script>
+</html>

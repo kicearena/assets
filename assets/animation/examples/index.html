@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>KICE · 작은 수학 공작소</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">KICE / CHARACTER & APPARATUS</p>
+          <h1>작은 수학 공작소</h1>
+          <p>장치를 고르고, 캐릭터에게 작은 반응을 더해보세요.</p>
+        </div>
+        <a href="../README.md">다른 프로젝트에서 사용하기 ↗</a>
+      </header>
+      <div class="layout">
+        <section class="stage">
+          <canvas
+            id="stage"
+            aria-label="캐릭터와 태그 장치 애니메이션"
+          ></canvas>
+          <div class="transport">
+            <button id="play" disabled>재생</button
+            ><button id="replay" disabled>처음부터</button
+            ><button id="poster" disabled>대표 순간</button
+            ><label class="timeline"
+              ><span class="sr-only">재생 시점</span
+              ><input
+                id="time"
+                type="range"
+                min="0"
+                max="6"
+                step=".01"
+                value="0" /></label
+            ><output id="clock">0.0초</output>
+          </div>
+          <div class="caption">
+            <h2 id="title">장치를 불러오는 중…</h2>
+            <p id="description">투명 배경 · 독립 부품 · 움직이는 부착점</p>
+            <p id="error" role="alert"></p>
+          </div>
+        </section>
+        <aside>
+          <h2>18개의 장치</h2>
+          <label
+            ><span class="sr-only">태그 장치</span
+            ><select id="topic" disabled></select
+          ></label>
+          <h2>캐릭터의 반응</h2>
+          <div id="effects" class="effects"></div>
+          <button id="device-react" style="margin-top: 10px">
+            장치의 부착점에 반짝임</button
+          ><label class="option"
+            ><input id="reduced" type="checkbox" /> 움직임 줄이기</label
+          >
+          <p class="small">
+            반응 버튼을 누르면 캐릭터의 머리를 따라 이펙트가 나타납니다.
+          </p>
+          <details>
+            <summary>에셋 둘러보기</summary>
+            <a href="../device-catalog.png" target="_blank">장치 전체 보기</a
+            ><a href="../effect-catalog.png" target="_blank"
+              >표정·이펙트 전체 보기</a
+            ><a id="svg" target="_blank">선택 장치 SVG</a
+            ><a id="png" target="_blank">선택 장치 PNG</a
+            ><a href="minimal.html">최소 통합 예제</a>
+          </details>
+        </aside>
+      </div>
+      <footer>
+        둥근 검정 선과 노란 포인트. 같은 캐릭터, 서로 다른 수학 도구.
+      </footer>
+    </main>
+    <script type="module" src="demo.js"></script>
+  </body>
+</html>

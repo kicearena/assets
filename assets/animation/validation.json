@@ -1,0 +1,19 @@
+{
+  "scope": "assets package 0.2.0 composition audit",
+  "deviceCount": 18,
+  "newEffectCount": 12,
+  "handToolCount": 8,
+  "characterMotionCount": 22,
+  "checks": [
+    "TypeScript and formatting",
+    "18 Vitest tests including composition and original package regression coverage",
+    "Vite production asset emission",
+    "offline tarball consumer imports and provenance",
+    "browser tool replacement, standalone apparatus and 1920x1080 PNG scene"
+  ],
+  "limitations": [
+    "No automatic contact IK for arbitrary replacement tools",
+    "No MP4 encoder; consumers capture deterministic PNG frames",
+    "Final homepage integration and production deployment are consumer responsibilities"
+  ]
+}

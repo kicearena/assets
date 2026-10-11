@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f4f3ed;
+  color: #121211;
+  font:
+    15px/1.6 system-ui,
+    sans-serif;
+}
+main {
+  max-width: 1190px;
+  margin: auto;
+  padding: 32px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #77756b;
+  margin: 0;
+}
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  margin: 10px 0;
+}
+header p {
+  color: #68665d;
+  margin: 12px 0 0;
+}
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+header a {
+  font-size: 13px;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: 24px;
+}
+.stage {
+  min-width: 0;
+  background: white;
+  border: 1px solid #deddd4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.5;
+  background: radial-gradient(ellipse at 50% 85%, #fff7da 0, white 62%);
+}
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+  border-top: 1px solid #efeee8;
+}
+.timeline {
+  flex: 1;
+  min-width: 20px;
+}
+.timeline input {
+  width: 100%;
+  accent-color: #171717;
+}
+output {
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  white-space: nowrap;
+}
+button,
+select {
+  font: inherit;
+  border: 1px solid #d9d7cc;
+  border-radius: 9px;
+  background: white;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+button:hover {
+  background: #fff6c4;
+}
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid #e4bb00;
+  outline-offset: 2px;
+}
+button:disabled,
+select:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+.caption {
+  padding: 0 22px 20px;
+}
+.caption h2 {
+  font-size: 19px;
+  margin: 0;
+}
+.caption p {
+  font-size: 13px;
+  color: #767269;
+  margin: 4px 0;
+}
+aside {
+  padding: 8px 0;
+}
+aside h2 {
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+aside h2:not(:first-child) {
+  margin-top: 26px;
+}
+select {
+  width: 100%;
+  padding: 11px;
+  background: #fff;
+}
+.effects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.effects button {
+  text-align: left;
+  font-size: 13px;
+  padding: 10px;
+}
+.option {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 24px 0 6px;
+  font-size: 13px;
+}
+.small {
+  font-size: 12px;
+  color: #767269;
+}
+details {
+  border-top: 1px solid #d9d7cc;
+  margin-top: 24px;
+  padding-top: 16px;
+  font-size: 13px;
+}
+details a {
+  display: block;
+  margin-top: 10px;
+}
+summary {
+  cursor: pointer;
+}
+footer {
+  font-size: 12px;
+  color: #8a867c;
+  padding-top: 22px;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+#error {
+  color: #a32a21;
+}
+@media (max-width: 760px) {
+  main {
+    padding: 20px 14px;
+  }
+  header {
+    display: block;
+  }
+  header a {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    padding: 5px;
+  }
+  .effects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .transport {
+    gap: 7px;
+    padding: 12px;
+  }
+  button {
+    padding: 8px;
+  }
+  output {
+    font-size: 12px;
+  }
+}
