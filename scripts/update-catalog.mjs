@@ -9,10 +9,6 @@ const packageJson = JSON.parse(
   await readFile(join(root, "package.json"), "utf8"),
 );
 const version = packageJson.version;
-if (version !== "0.2.0")
-  throw new Error(
-    `Update the versioned asset directory before catalog generation: ${version}`,
-  );
 const basePath = `/kice-assets/${version}`;
 const mediaTypes = {
   ".css": "text/css; charset=utf-8",

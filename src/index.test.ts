@@ -6,7 +6,7 @@ import { ASSETS, ASSET_VERSION, assetUrl, type AssetId } from "./index.js";
 import { assetFilePath } from "./node.js";
 describe("versioned assets", () => {
   it("preserves every inventoried asset and fully decodes its original bytes", async () => {
-    expect(Object.keys(ASSETS)).toHaveLength(292);
+    expect(Object.keys(ASSETS)).toHaveLength(274);
     for (const id of Object.keys(ASSETS) as AssetId[]) {
       const bytes = readFileSync(assetFilePath(id));
       expect(bytes.length).toBe(ASSETS[id].bytes);
@@ -19,7 +19,7 @@ describe("versioned assets", () => {
       }
     }
   });
-  it("ships 4K revised icons and an articulated portable animation catalog", async () => {
+  it("ships borderless default icons and an articulated portable animation catalog", async () => {
     for (const name of [
       "01-polynomial",
       "02-equations-inequalities",
@@ -43,19 +43,7 @@ describe("versioned assets", () => {
       const full = await sharp(
         assetFilePath(`icons/topics/${name}` as AssetId),
       ).metadata();
-      const compact = await sharp(
-        assetFilePath(`icons/topics/compact/${name}` as AssetId),
-      ).metadata();
-      expect([full.width, full.height, full.hasAlpha]).toEqual([
-        4096,
-        4096,
-        true,
-      ]);
-      expect([compact.width, compact.height, compact.hasAlpha]).toEqual([
-        1024,
-        1024,
-        true,
-      ]);
+      expect([full.width, full.height]).toEqual([512, 512]);
     }
     expect(assetFilePath("animation/catalog" as AssetId)).toContain(
       "assets/animation/catalog.json",
@@ -95,7 +83,7 @@ describe("versioned assets", () => {
 });
 
 describe("mascot artwork and animation", () => {
-  it("includes revised 4K and compact topic icons", async () => {
+  it("includes the single borderless default topic set", async () => {
     const topics = [
       "01-polynomial",
       "02-equations-inequalities",
@@ -117,18 +105,10 @@ describe("mascot artwork and animation", () => {
       "18-solid-geometry",
     ];
     for (const topic of topics) {
-      for (const [folder, dimension] of [
-        ["icons/topics", 4096],
-        ["icons/topics/compact", 1024],
-      ] as const) {
-        const id = `${folder}/${topic}` as AssetId;
-        const metadata = await sharp(assetFilePath(id)).metadata();
-        expect([metadata.width, metadata.height, metadata.hasAlpha]).toEqual([
-          dimension,
-          dimension,
-          true,
-        ]);
-      }
+      const metadata = await sharp(
+        assetFilePath(`icons/topics/${topic}` as AssetId),
+      ).metadata();
+      expect([metadata.width, metadata.height]).toEqual([512, 512]);
     }
   });
 

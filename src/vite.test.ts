@@ -28,11 +28,11 @@ describe("Vite asset boundary", () => {
           "content-length",
         ),
       ).toBe(String(ASSETS["icons/main"].bytes));
-      expect((await fetch(origin + "/kice-assets/0.2.0/missing")).status).toBe(
+      expect((await fetch(origin + "/kice-assets/0.2.1/missing")).status).toBe(
         404,
       );
       expect(
-        (await fetch(origin + "/kice-assets/0.2.0/%2e%2e/package.json")).status,
+        (await fetch(origin + "/kice-assets/0.2.1/%2e%2e/package.json")).status,
       ).toBe(404);
     } finally {
       await server.close();

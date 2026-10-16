@@ -3,15 +3,13 @@ import "./style.css";
 for (const [selector, prefix] of [
   ["#ranks", "ranks/"],
   ["#pages", "icons/"],
-  ["#topics", "icons/topics/compact/"],
+  ["#topics", "icons/topics/"],
   ["#topic-masters", "icons/topics/"],
 ]) {
   const ids = (Object.keys(ASSETS) as AssetId[]).filter(
     (id) =>
       id.startsWith(prefix) &&
-      (selector !== "#pages" || !id.startsWith("icons/topics/")) &&
-      (selector !== "#topic-masters" ||
-        !id.startsWith("icons/topics/compact/")),
+      (selector !== "#pages" || !id.startsWith("icons/topics/")),
   );
   for (const id of ids) {
     const figure = document.createElement("figure");

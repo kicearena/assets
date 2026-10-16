@@ -5,9 +5,9 @@ import type { AssetId } from "./index.js";
 
 describe("mascot animation package", () => {
   it("provides a versioned local and CDN directory for the standalone runtime", () => {
-    expect(animationBaseUrl()).toBe("/kice-assets/0.2.0/animation/");
+    expect(animationBaseUrl()).toBe("/kice-assets/0.2.1/animation/");
     expect(animationBaseUrl("https://cdn.example.com")).toBe(
-      "https://cdn.example.com/kice-assets/0.2.0/animation/",
+      "https://cdn.example.com/kice-assets/0.2.1/animation/",
     );
     expect(assetFilePath("animation/runtime/kit" as AssetId)).toMatch(
       /assets\/animation\/runtime\/kit\.js$/,

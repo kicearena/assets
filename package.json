@@ -1,6 +1,6 @@
 {
   "name": "@kicearena/assets",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Versioned KICE icons, mascot animation, math apparatus and effects.",
   "repository": {

@@ -1,6 +1,6 @@
 {
-  "version": "0.2.0",
-  "basePath": "/kice-assets/0.2.0",
+  "version": "0.2.1",
+  "basePath": "/kice-assets/0.2.1",
   "assets": {
     "animation/CREDITS": {
       "path": "animation/CREDITS.md",
@@ -1492,218 +1492,110 @@
     },
     "icons/topics/01-polynomial": {
       "path": "icons/topics/01-polynomial.png",
-      "sha256": "56afd16cffa4010d13cd47fd9ea6c3b9fb498166645297218baaf1818cc367a4",
-      "bytes": 380952,
+      "sha256": "e57aa883651438e6d5c413958fdbc9d09c23933b552e83e3c7084b70d462ecbe",
+      "bytes": 98376,
       "mediaType": "image/png"
     },
     "icons/topics/02-equations-inequalities": {
       "path": "icons/topics/02-equations-inequalities.png",
-      "sha256": "ae41cb8615867697489b5387c9c098ffe6e909ce0655d35f2d8b6858f99d4ea7",
-      "bytes": 249477,
+      "sha256": "403a9d94bc0e53b30e875f511e2459315e7022b1ec29a0e616c9e82d76f7a554",
+      "bytes": 69612,
       "mediaType": "image/png"
     },
     "icons/topics/03-functions": {
       "path": "icons/topics/03-functions.png",
-      "sha256": "d7158f3ca38f238ff5d1ac7a460a299ec5335cd0229ad07c2a46a4ee3ba5495e",
-      "bytes": 328934,
+      "sha256": "ddcd9520bc3731530fa13b5f26e9759f13811075cd03640b598998cc5606885d",
+      "bytes": 78866,
       "mediaType": "image/png"
     },
     "icons/topics/04-exponents-logarithms": {
       "path": "icons/topics/04-exponents-logarithms.png",
-      "sha256": "024ad3a1aff264c8ebced5932ef449e4e08304c0f45589d8416d24509cb3d18e",
-      "bytes": 434165,
+      "sha256": "154d804b030b5ed648f1f57f7a62652a656bdd76e65d8f6f2123a56943c4266d",
+      "bytes": 94586,
       "mediaType": "image/png"
     },
     "icons/topics/05-trigonometry": {
       "path": "icons/topics/05-trigonometry.png",
-      "sha256": "b01efbdc8d894ad89eed6723d21fc4a1d3b0a7e7f871d4c6736d9c94aceb1554",
-      "bytes": 433215,
+      "sha256": "892889d2c77f741daee824b1b84f968b702ea8408b9cfc49f1950421cee08a5c",
+      "bytes": 91110,
       "mediaType": "image/png"
     },
     "icons/topics/06-sequences": {
       "path": "icons/topics/06-sequences.png",
-      "sha256": "de215f641e8de25efda924b47002423f2ffb2f2a41801b426ee5315808070270",
-      "bytes": 309866,
+      "sha256": "333d64520a7ecaed750a4df370db9cffa5290370efd2e8d023103ddf186a3241",
+      "bytes": 88488,
       "mediaType": "image/png"
     },
     "icons/topics/07-limits": {
       "path": "icons/topics/07-limits.png",
-      "sha256": "437d0c3e8424396c1dc0f3e1cb50eb5b0ab91286995b1f56fa9286b03b940880",
-      "bytes": 321405,
+      "sha256": "5cad98eeb221788662bd0f557ac8b2efc61257187905426d8d24d0a115f4f5d8",
+      "bytes": 86661,
       "mediaType": "image/png"
     },
     "icons/topics/08-derivatives": {
       "path": "icons/topics/08-derivatives.png",
-      "sha256": "e41af21eb1a0a723e30513862a9547c652f52b768b34c01266e607095d02906c",
-      "bytes": 414653,
+      "sha256": "6e7c1b8a75b95f9a20eb48d287fa8d5f6f396445f654ba0de66df0382fb0a19e",
+      "bytes": 87071,
       "mediaType": "image/png"
     },
     "icons/topics/09-integrals": {
       "path": "icons/topics/09-integrals.png",
-      "sha256": "e7feaeec37829816e752c9f6af171419228d3f2846e03304ec52567dc4b3c1ef",
-      "bytes": 292589,
+      "sha256": "0e42c668a6b8d74f3558e3414d9cc491cec5eb9f5eefcee6ebcb26628eee1fb6",
+      "bytes": 85865,
       "mediaType": "image/png"
     },
     "icons/topics/10-counting": {
       "path": "icons/topics/10-counting.png",
-      "sha256": "8ee0bfc6d40fec3c0acc0d249e0d731c6c7828aa0c96bf8988e9390a31098c41",
-      "bytes": 403914,
+      "sha256": "1e9e99bd5bdcb2feeae0a0589c300c431675c33fbc346aa441bb33199dd2fed4",
+      "bytes": 72560,
       "mediaType": "image/png"
     },
     "icons/topics/11-probability": {
       "path": "icons/topics/11-probability.png",
-      "sha256": "e7380886b567d8eff866238d0e26705999bd05a72f4541f1ad73431872bd09d8",
-      "bytes": 313245,
+      "sha256": "77c0108aea140a4b34ee80412f39f829456ab2d94901e163ab67a5b18c91c91c",
+      "bytes": 88948,
       "mediaType": "image/png"
     },
     "icons/topics/12-statistics": {
       "path": "icons/topics/12-statistics.png",
-      "sha256": "35703594732c7a05002bc7e4ad69bf37c5b58453e3c2b35a16abe2598a2f3f49",
-      "bytes": 206506,
+      "sha256": "7f0e17f5fd1f1c2068ab42806b7d66d58d4a56fbbcc1638c832c94d9ddcf3405",
+      "bytes": 84627,
       "mediaType": "image/png"
     },
     "icons/topics/13-sets-propositions": {
       "path": "icons/topics/13-sets-propositions.png",
-      "sha256": "4c2615f6397833989d5aaa15974c767318a96529fe32ac0efba0de6556e9847a",
-      "bytes": 440867,
+      "sha256": "e0859b4346e7a018e4b1a90b8ae06319027fb0d7f965a42d61c1b2509982cce3",
+      "bytes": 91283,
       "mediaType": "image/png"
     },
     "icons/topics/14-coordinate-geometry": {
       "path": "icons/topics/14-coordinate-geometry.png",
-      "sha256": "4d38cca99ab868ba425f1809f5070e0c60c9138b87c2f984219a0889ff19707b",
-      "bytes": 202814,
+      "sha256": "13191aa6cfe62010ec2f08d7befe719f4f0aca41f28d62ead192eb9d4b8ac88a",
+      "bytes": 83512,
       "mediaType": "image/png"
     },
     "icons/topics/15-circles": {
       "path": "icons/topics/15-circles.png",
-      "sha256": "9779a9ab3470c33141c39f5333cf753598eb13521d37f92fa108431000d9ec1b",
-      "bytes": 406331,
+      "sha256": "fc5ec9e7e93a4d7671d9d18bfde0ed58b14dc5937cfda37b3dd0d05f3d298ebd",
+      "bytes": 89053,
       "mediaType": "image/png"
     },
     "icons/topics/16-conic-sections": {
       "path": "icons/topics/16-conic-sections.png",
-      "sha256": "b626158593d723c6db96212e5c53d5c3ed599541e861431dff203fa84533b04d",
-      "bytes": 358094,
+      "sha256": "64a3edf780cedb3ff9d3773c4666e22c08f488e398ad066af37528241e0dc688",
+      "bytes": 78536,
       "mediaType": "image/png"
     },
     "icons/topics/17-vectors": {
       "path": "icons/topics/17-vectors.png",
-      "sha256": "066711def422d2cc8da527650bb4adad15b2b7566f53d6475dee713a51893b6a",
-      "bytes": 309216,
+      "sha256": "3543ec0dfb3e6b319daf8c8805bf32dfbc2f040ebde38abdbec12b68acf87937",
+      "bytes": 88238,
       "mediaType": "image/png"
     },
     "icons/topics/18-solid-geometry": {
       "path": "icons/topics/18-solid-geometry.png",
-      "sha256": "6fcaa70bba3050114e763a4ee9aabc1d6e29c5a1c9e7bd8dba293b3866cdea53",
-      "bytes": 564502,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/01-polynomial": {
-      "path": "icons/topics/compact/01-polynomial.png",
-      "sha256": "60759abb20c6bfe9c83ee8868f35b0b87cbf998fd8d6faec321066f3331981d7",
-      "bytes": 69709,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/02-equations-inequalities": {
-      "path": "icons/topics/compact/02-equations-inequalities.png",
-      "sha256": "8ca339179386b1bc225aead9e795878377fee8a234bdb75d6a4ddf061029f0ec",
-      "bytes": 48043,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/03-functions": {
-      "path": "icons/topics/compact/03-functions.png",
-      "sha256": "334785de89bfdd3b53a129311e658891b9c622027abdefdb83410620bc53d6ae",
-      "bytes": 67176,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/04-exponents-logarithms": {
-      "path": "icons/topics/compact/04-exponents-logarithms.png",
-      "sha256": "04574b45ce696b2f6528b0da5ac39ca552cdd9198f23ca66e864c0b53428ac38",
-      "bytes": 77781,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/05-trigonometry": {
-      "path": "icons/topics/compact/05-trigonometry.png",
-      "sha256": "847b199d7e47fb6f55bb7be331d377724ec71361cddaaf0afec1a3aac8101326",
-      "bytes": 80646,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/06-sequences": {
-      "path": "icons/topics/compact/06-sequences.png",
-      "sha256": "181c005b4b57899fd1d6a7fbf9a79ddf019ac8a8a0f05b083db9dea09383614e",
-      "bytes": 58992,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/07-limits": {
-      "path": "icons/topics/compact/07-limits.png",
-      "sha256": "7f1f31f41a8f3702f044d3086ecfcc5711b12d4a9311bcd76e22b00829bc774c",
-      "bytes": 62903,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/08-derivatives": {
-      "path": "icons/topics/compact/08-derivatives.png",
-      "sha256": "5497a23b429bf9aae68cdb6547b7d3345d7e8a07825c8c9b2675fc4148cd74d1",
-      "bytes": 80963,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/09-integrals": {
-      "path": "icons/topics/compact/09-integrals.png",
-      "sha256": "16b34590d071398d9673c2fb00c49a6dffb25bbf2f4a8f0da75a3fdf6a29a24b",
-      "bytes": 57139,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/10-counting": {
-      "path": "icons/topics/compact/10-counting.png",
-      "sha256": "ff2558e193f82327900e2c84198a304c4617d879986686d1e42f6c251a1271ad",
-      "bytes": 74836,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/11-probability": {
-      "path": "icons/topics/compact/11-probability.png",
-      "sha256": "39de739380787ec627db8858c4662b21a72333801c76ffc6a625443ee0e06875",
-      "bytes": 57632,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/12-statistics": {
-      "path": "icons/topics/compact/12-statistics.png",
-      "sha256": "0bd3ac3a81296e3c22343744ea5420c26c67e48776a4e3a781ea91bd1f92fae9",
-      "bytes": 37784,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/13-sets-propositions": {
-      "path": "icons/topics/compact/13-sets-propositions.png",
-      "sha256": "30e135131527b05fdaf40d869f0b83ea831a9dfd8044a9b7eaaec1bd3d498def",
-      "bytes": 93164,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/14-coordinate-geometry": {
-      "path": "icons/topics/compact/14-coordinate-geometry.png",
-      "sha256": "923fa8668dac7e90358538c62736b34032cfe7e2d191e0abd0a13a89819804a0",
-      "bytes": 40522,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/15-circles": {
-      "path": "icons/topics/compact/15-circles.png",
-      "sha256": "77de85e770fe2c9d8234af5a7fab96c939b522faf312880d418f728016ffb9b6",
-      "bytes": 75983,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/16-conic-sections": {
-      "path": "icons/topics/compact/16-conic-sections.png",
-      "sha256": "39145c085293fe759d2c8839eb89072c4ad76ca21951857cab75f5daa9b9f627",
-      "bytes": 69168,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/17-vectors": {
-      "path": "icons/topics/compact/17-vectors.png",
-      "sha256": "65d9331f145c7254930ba9e74b0773623b561dbe2c271f0355c79e13da261a34",
-      "bytes": 58510,
-      "mediaType": "image/png"
-    },
-    "icons/topics/compact/18-solid-geometry": {
-      "path": "icons/topics/compact/18-solid-geometry.png",
-      "sha256": "ececf3960116d605371b446b0dd59848dd333f086cbcdfaa514312b885a27134",
-      "bytes": 97737,
+      "sha256": "5d875254acc4cfaee0fee586146ac3c7f14f582b09c35f76232fe92d39f07525",
+      "bytes": 95161,
       "mediaType": "image/png"
     },
     "images/discord-open-poster": {
